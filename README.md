@@ -1,7 +1,7 @@
 ### Teste de Front-End Wooza
 ------------
 
-Para iniciar o aplicativo, basta abrir o arquivo **index.html** na pasta **build**.
+Para iniciar o aplicativo, basta baixar o repositório e abrir o arquivo **index.html** na pasta **build**.
 
 O aplicativo foi feito em **React.js**. O código-fonte está na branch de desenvolvimento.
 
