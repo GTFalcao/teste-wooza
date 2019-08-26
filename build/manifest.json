@@ -1,0 +1,8 @@
+{
+  "short_name": "Teste de Front-End",
+  "name": "Teste de Front-End para Wooza",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
