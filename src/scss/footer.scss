@@ -1,0 +1,14 @@
+.app-footer {
+  display: block;
+  width: -webkit-fill-available;
+  padding: 10vh 0;
+  
+  position: fixed;
+  bottom: 0;
+
+	background-image: linear-gradient(
+    to top,
+    $default-background,
+    lighten($default-background, 100%)
+  );
+}

@@ -1,0 +1,52 @@
+// Box rendered while the platforms are being loaded.
+// Once they are, this is removed
+.loading-box {
+	width: $block-level-width;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 15px;
+
+	background-color: $default-background;
+	border: $default-border;
+	border-radius: $default-border-radius;
+
+	> h1 {
+		text-align: center;
+		font-size: 1.5em;
+		margin: 0;
+	}
+
+	&.loading--done {
+		animation: fade-out ease-out 0.3s forwards;
+	}
+
+	&__dots {
+		display: flex;
+		justify-content: space-evenly;
+
+		width: 30%;
+		margin: 0 auto;
+
+		color: $default-border-color;
+    font-size: 6em;
+    line-height: 1;
+
+		@for $i from 1 through 3 {
+			span:nth-child(#{$i}) {
+				animation: active-dot .8s cubic-bezier(0, 1, 0, 1) #{$i / 6}s infinite;
+			}
+		}
+	}
+}
+
+@keyframes active-dot {
+	0% {
+		transform: initial;
+	}
+	20% {
+		transform: scale(1.2) translateY(-8px);
+  }
+  100% {
+    transform: initial;
+  }
+}

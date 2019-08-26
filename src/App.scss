@@ -1,0 +1,44 @@
+
+// Core variables
+@import "scss/main.scss";
+
+// Functions & shortcuts
+@import "scss/functions.scss";
+
+// Transitions
+@import "scss/transitions.scss";
+
+// -------------- //
+// App Structure  //
+// -------------- //
+
+// App Header
+@import "scss/header.scss";
+
+// Loading box
+@import "scss/loadingBox.scss";
+
+// -------------- //
+
+// Navigation bar
+@import "scss/navBar.scss";
+
+// -------------- //
+
+// Platform options
+@import "scss/platformOptions.scss";
+
+// Swipe options left/right
+@import "scss/optionArrows.scss";
+
+// Select current option
+@import "scss/optionButton.scss";
+
+// Form window when an option is selected
+@import "scss/optionForm.scss";
+
+
+// -------------- //
+
+// App Footer
+@import "scss/footer.scss";

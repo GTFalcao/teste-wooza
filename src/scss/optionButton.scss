@@ -1,0 +1,30 @@
+// Button for selecting the option
+.platform-options .option__button {
+	cursor: pointer;
+	margin-top: auto;
+	align-self: center;
+	width: fit-content;
+	padding: 10px 15px;
+
+	font-weight: bold;
+	font-size: 1.15em;
+
+	border: $default-border;
+	border-radius: $default-border-radius;
+	background-color: darken($default-background, 6%);
+	box-shadow: $default-box-shadow;
+	outline: none;
+	transition: all 0.2s ease;
+
+	&:not(.option--done):hover {
+		background-color: darken($default-background, 4%);
+		transform: scale(1.05);
+  }
+  
+  &.option--done {
+    cursor: initial;
+    color: #272;
+    border: 1px solid darken(desaturate($default-border-color, 100%), 25%);
+    background-color: darken(desaturate($default-background, 100%), 15%);
+  }
+}

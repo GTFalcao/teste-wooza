@@ -1,0 +1,52 @@
+// Swipe left/right arrow-buttons
+
+// Why use a mixin for two separate classes, instead of extending
+// or using modifier classes? Here's a nice article showing the
+// small performance gains associated.
+// https://tech.bellycard.com/blog/sass-mixins-vs-extends-the-data/
+
+@mixin options-button-properties {
+	position: absolute;
+	bottom: 37.5%;
+
+	font-size: 4.5em;
+	line-height: 1;
+	color: $default-border-color;
+
+	cursor: pointer;
+	transition: all 0.2s ease;
+
+	&:hover {
+		color: lighten($default-border-color, 8%);
+		transform: scale(1.25) translateY(-2px);
+	}
+
+	&.swipe--hidden {
+		display: none;
+  }
+  
+  // Optimizing for small devices
+  @media screen and (max-width: 320px) {
+    font-size: 3em;
+    bottom: 35%;
+  }
+}
+
+.platform-options__swipe {
+	&-left {
+		@include options-button-properties;
+    left: $platform-options-spacing / 2.5;
+    
+    @media screen and (max-width: 320px) {
+      left: 2px;
+    }
+	}
+	&-right {
+		@include options-button-properties;
+    right: $platform-options-spacing / 2.5;
+    
+    @media screen and (max-width: 320px) {
+      right: 2px;
+    }
+	}
+}

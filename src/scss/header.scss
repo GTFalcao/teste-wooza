@@ -1,0 +1,15 @@
+.app-logo {
+  width: 40vmin;
+}
+
+.app-header {
+	display: block;
+	padding: 3vmin 0 10vmin 0;
+	text-align: center;
+
+	background-image: linear-gradient(
+    to bottom,
+    lighten($default-background, 1%),
+    lighten($default-background, 100%)
+  );
+}

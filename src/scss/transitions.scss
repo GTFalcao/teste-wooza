@@ -1,0 +1,65 @@
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fade-out {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+@keyframes slide-in {
+  from {
+    transform: translateY(80vh);
+  } to {
+    transform: translateY(0);
+  }
+}
+@keyframes slide-out {
+  from {
+    transform: translateY(0);
+  } to {
+    transform: translateY(80vh);
+  }
+}
+
+
+// Transition when a platform is first selected - React CSSTransition
+.platform-options-transition {
+	&-appear {
+		&-active {
+			opacity: 0;
+		}
+
+		&-done {
+			transition: opacity 0.4s ease-out, transform 0.4s linear;
+			opacity: 1;
+
+			h1 {
+				opacity: 0;
+				animation: fade-in 0.2s ease-out 0.35s forwards;
+			}
+
+			.platform-options__container {
+				opacity: 0;
+				animation: fade-in 0.2s ease-out 0.55s forwards;
+			}
+		}
+	}
+}
+
+// Transition between platforms - JS/CSS Transition
+.platform-navbar.platform--active + .platform-options {
+	* {
+		color: transparent !important;
+	}
+	transform: rotateY(90deg);
+}
+
+// Transition for the form that appears upon selecting an option

@@ -1,0 +1,6 @@
+// Repeat the same value for multiple border properties
+@mixin bordas($props, $directions...) {
+	@each $dir in $directions {
+		border-#{$dir}: $props;
+	}
+}
