@@ -3,7 +3,7 @@
 
 Para iniciar o aplicativo, basta abrir o arquivo **index.html** na pasta **build**.
 
-O aplicativo foi feito em **React.js**. O código-fonte está na pasta **src**.
+O aplicativo foi feito em **React.js**. O código-fonte está na branch de desenvolvimento.
 
 Conforme orientação do teste, ao contratar um plano, os dados relevantes serão impressos no console do navegador.
 
